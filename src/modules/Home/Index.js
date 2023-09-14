@@ -1,7 +1,7 @@
 import { Text, View } from "react-native";
 
-import Button from "@interfaces/Button";
-import Screen from "@layouts/Screen";
+import Button from "@interface/Button";
+import Screen from "@layout/Screen";
 
 const Home = ({ navigation }) => {
   const handleNavigateToAbout = () => {
@@ -12,6 +12,10 @@ const Home = ({ navigation }) => {
     navigation.navigate("Counter");
   };
 
+  const handleNavigateToGreeter = () => {
+    navigation.navigate("Greeter");
+  };
+
   return (
     <Screen>
       <View className="flex-1 items-center justify-center">
@@ -20,18 +24,31 @@ const Home = ({ navigation }) => {
           This project should serve as a boilerplate for React Native projects
           in the future. Happy Coding!
         </Text>
-        <Button
-          isFullWidth
-          style="mb-5"
-          label="Try Out App Counter"
-          onPress={handleNavigateToAppCounter}
-          colors={{
-            icon: "white",
-            loader: "blue",
-            text: "border-slate-600",
-            button: "border border-slate-600",
-          }}
-        />
+        <View className="pb-10 mb-10 border-b border-b-slate-300 w-full">
+          <Button
+            isFullWidth
+            style="mb-5"
+            label="Try Out App Counter"
+            onPress={handleNavigateToAppCounter}
+            colors={{
+              icon: "white",
+              loader: "blue",
+              text: "border-slate-600",
+              button: "border border-slate-600",
+            }}
+          />
+          <Button
+            isFullWidth
+            label="Try Out Greeter"
+            onPress={handleNavigateToGreeter}
+            colors={{
+              icon: "white",
+              loader: "blue",
+              text: "border-slate-600",
+              button: "border border-slate-600",
+            }}
+          />
+        </View>
         <Button
           isFullWidth
           label="About Developer"

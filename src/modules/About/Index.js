@@ -1,7 +1,7 @@
 import { Text, View, Image } from "react-native";
 
-import Screen from "@layouts/Screen";
-import Button from "@interfaces/Button";
+import Screen from "@layout/Screen";
+import Button from "@interface/Button";
 
 const About = ({ navigation, route }) => {
   const handleNavigateToAbout = () => {

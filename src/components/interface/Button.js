@@ -8,9 +8,14 @@ const Button = ({ colors, label, onPress, disabled, ...props }) => {
     <TouchableOpacity
       onPress={onPress}
       disabled={disabled}
-      className={classNames("rounded px-7 py-3", props?.style, colors?.button, {
-        "w-full": props?.isFullWidth,
-      })}
+      className={classNames(
+        "rounded-lg px-7 py-3",
+        props?.style,
+        colors?.button,
+        {
+          "w-full": props?.isFullWidth,
+        }
+      )}
     >
       <View className={classNames("flex-row justify-center items-center")}>
         {props?.icon?.position === "right" && !props?.isLoading && (

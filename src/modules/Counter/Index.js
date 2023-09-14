@@ -1,8 +1,8 @@
 import { Text, View } from "react-native";
 import { connect, useDispatch } from "react-redux";
 
-import Button from "@interfaces/Button";
-import Screen from "@layouts/Screen";
+import Button from "@interface/Button";
+import Screen from "@layout/Screen";
 
 import { increment, decrement } from "@redux/slices/app";
 
