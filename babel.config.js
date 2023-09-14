@@ -12,7 +12,7 @@ module.exports = function (api) {
             "@core": "./src/core",
             "@modules": "./src/modules",
             "@layouts": "./src/components/layouts",
-            "@elements": "./src/components/elements",
+            "@interfaces": "./src/components/interface",
           },
         },
       ],

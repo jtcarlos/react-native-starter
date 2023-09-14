@@ -5,7 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const Screen = ({ statusBarProps, children }) => {
   return (
     <SafeAreaView>
-      <View className="h-full">{children}</View>
+      <View className="h-full p-6">{children}</View>
       <StatusBar style="auto" {...statusBarProps} />
     </SafeAreaView>
   );
