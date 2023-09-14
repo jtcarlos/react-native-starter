@@ -8,6 +8,10 @@ const Home = ({ navigation }) => {
     navigation.navigate("About", { page: "About Page Parameter" });
   };
 
+  const handleNavigateToAppCounter = () => {
+    navigation.navigate("Counter");
+  };
+
   return (
     <Screen>
       <View className="flex-1 items-center justify-center">
@@ -18,9 +22,20 @@ const Home = ({ navigation }) => {
         </Text>
         <Button
           isFullWidth
+          style="mb-5"
+          label="Try Out App Counter"
+          onPress={handleNavigateToAppCounter}
+          colors={{
+            icon: "white",
+            loader: "blue",
+            text: "border-slate-600",
+            button: "border border-slate-600",
+          }}
+        />
+        <Button
+          isFullWidth
           label="About Developer"
           onPress={handleNavigateToAbout}
-          icon={{ position: "left", name: "long-arrow-alt-right", size: 15 }}
           colors={{
             icon: "white",
             loader: "blue",

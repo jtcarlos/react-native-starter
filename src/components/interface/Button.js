@@ -8,7 +8,7 @@ const Button = ({ colors, label, onPress, disabled, ...props }) => {
     <TouchableOpacity
       onPress={onPress}
       disabled={disabled}
-      className={classNames("rounded px-7 py-3", colors?.button, {
+      className={classNames("rounded px-7 py-3", props?.style, colors?.button, {
         "w-full": props?.isFullWidth,
       })}
     >

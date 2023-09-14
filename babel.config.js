@@ -10,6 +10,7 @@ module.exports = function (api) {
           root: ["./src"],
           alias: {
             "@core": "./src/core",
+            "@redux": "./src/redux",
             "@modules": "./src/modules",
             "@layouts": "./src/components/layouts",
             "@interfaces": "./src/components/interface",
